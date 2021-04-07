@@ -1,0 +1,353 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+/*** HOMEPAGE ***/
+/* Header */
+#HeaderContainer{
+    position: relative;
+    padding: 1rem;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+
+.HeaderLogo{
+    margin: 0;
+    text-align: center;
+    font-family: 'Shrikhand', cursive;
+}
+/* Header */
+
+
+/* Main */
+#MainContainer{
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Locality Section */
+.Locality{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #eaeaea;
+}
+
+.LocalityIcon{
+    margin-right: 1rem;
+}
+
+.LocalityCity{
+    font-weight: 500;
+    color: #353535;
+}
+/* Locality Section */
+
+
+/* Explore Section */
+.Explore{
+    text-align: center;
+    padding: 2rem;
+    background-color: #f6f6f6;
+}
+
+.ExploreTitle{
+    font-size: 30px;
+}
+
+.ExploreText{
+    color: #414141;
+}
+
+.ExploreBtn{
+    margin-bottom: 2rem;
+    width: 13.75rem;
+    height: 2.80rem;
+    border: 0 solid transparent;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    background: linear-gradient(356deg, rgba(147,86,220,1) 34%, rgba(255,121,218,1) 97%);
+}
+/* Explore Section */
+
+
+/* Discover Section */
+.Discover{
+    padding: 2rem;
+}
+
+.DiscoverTitle{
+    margin-bottom: 2rem;
+}
+
+.DiscoverList{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li::before{
+    content: counter(li);
+    display: inline-block; 
+    margin-left: -3rem;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    color: white;
+    background-color: #9356dc;
+    padding: 0.5rem 0.8rem;
+}
+
+li {counter-increment: li}
+
+.DiscoverListStep{
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 20px;
+    background-color: #f6f6f6;
+    box-shadow: 0px 2px 10px 0px lightgray;
+    text-align: center;
+}
+
+.DiscoverIcon{
+    padding-right: 2rem;
+}
+
+/*Affichage iPad et desktop*/
+@media only screen and (min-width: 768px){
+    .DiscoverList{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+/* Discover Section */
+
+
+/* Restaurants Section */
+.RestaurantsContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2rem repeat(4, 15rem);
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #f6f6f6;
+}
+
+.heart{
+    font-size: 1.5rem;
+}
+
+.RestaurantsTitle{
+    margin-top: 1rem;
+}
+
+.FoodCards{
+    position: relative;
+    border-radius: 1.25rem;
+    box-shadow: 0px 2px 30px 0px lightgray;
+    align-content: stretch;
+}
+
+.New{
+    padding: 0.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #008766;
+    background-color: #99E2D0;
+}
+
+.Heart{
+    position: absolute;
+    top: 11rem;
+    right: 2rem;
+}
+
+.FoodCardsPictures{
+    border-radius: 1.25rem 1.25rem 0 0;
+    object-fit: cover;
+    width: 100%;
+    height: 70%;
+}
+
+.FoodCardsInfo{
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.DinnerName{
+    font-size: 1rem;
+    margin: 0;
+}
+
+.City{
+    margin-top: 0.3rem;
+}
+
+/*Affichage iPad et desktop*/
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .RestaurantsContainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 2rem repeat(2, 15rem);
+    }
+
+    .RestaurantsTitle{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+}
+
+/*Desktop*/
+@media only screen and (min-width: 1025px){
+    .RestaurantsContainer{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 2rem repeat(1, 15rem);
+    }
+
+    .RestaurantsTitle{
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+}
+/* Restaurants Section */
+/* Main */
+
+
+/* Footer */
+.FooterContainer{
+    display: flex;
+    flex-direction : column;
+    padding: 2rem;
+    color: white;
+    background-color: #353535;
+}
+
+.FooterTilte{
+    font-family: 'Shrikhand', cursive;
+}
+
+.Fork{
+    margin-right: 1rem;
+}
+.HandShake{
+    margin-right: 0.62rem;
+}
+
+/*iPad Pro & Desktop*/
+@media only screen and (min-width: 1024px){
+    .FooterContainer{
+        display: flex;
+        flex-direction : row;
+        justify-content : space-around;
+    }
+}
+/* Footer */
+/*** HOMEPAGE ***/
+
+
+/***/
+/***/
+/***/
+
+
+/*** MENU ***/
+/* Header */
+.arrow{
+    position: absolute;
+    padding-top: 0.8rem;
+    font-size: 1.3rem;
+}
+
+.headerimg{
+    max-height: 20rem;
+    width: 100%;
+    object-fit: cover;
+}
+/* Header */
+
+/* Main */
+.menu{
+    margin-top: -4rem;
+    position: relative;
+    border-radius: 2rem 2rem 0 0;
+    background-color: #f6f6f6;
+}
+
+.menu_title{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.title{
+    font-family: 'Shrikhand', cursive;
+}
+
+.title_heart{
+    font-size: 1.5rem;
+}
+
+/* Links */
+.appetizer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto repeat(3, 4rem);
+    gap: 1.25rem;
+    padding: 1rem;
+}
+
+.main h3{
+    padding-bottom: 1rem;
+    font-weight: 200;
+    color: #5c5c5c;
+}
+
+.appetizer p{
+    font-size: 0.9em;
+}
+
+.underline{
+    padding-bottom: 0.30rem;
+    border-bottom: 3px solid #99e2d0;
+}
+
+.menulinks{
+    display: flex;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+
+.menulinkscontainer{
+    flex-grow: 1;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.price{
+    padding-top: 2.3rem;
+    font-weight: bold;
+}
+/* Links */
+/* Main */
+/*** MENU ***/

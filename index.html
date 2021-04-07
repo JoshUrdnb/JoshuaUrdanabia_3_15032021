@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap"
+    rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5e5575031f.js" crossorigin="anonymous"></script>
+    <title>ohmyfood!</title>
+    <link rel="stylesheet" media="screen" href="style.css">
+</head>
+
+<body>
+    <!--Header-->
+    <header id="HeaderContainer">
+        <h1 class="HeaderLogo"><a href="index.html">ohmyfood</a></h1>
+    </header>
+    <!--Header-->
+
+
+    <!--Main-->
+    <main id="MainContainer">
+        <section class="Locality">
+            <div class="MarkerMap">
+                <i class="fas fa-map-marker-alt LocalityIcon"></i>
+            </div>
+            <a class="LocalityCity" href="#">Paris, Belleville</a>
+        </section>
+
+        <section class="Explore">
+            <h2 class="ExploreTitle">Réservez le menu qui vous convient</h2>
+            <p class="ExploreText">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <button class="ExploreBtn">Explorer nos restaurants</button>
+        </section>
+
+        <section class="Discover">
+            <h2 class="DiscoverTitle">Fonctionnement</h2>
+                <ol class="DiscoverList">
+                    <li class="DiscoverListStep"><i class="fas fa-mobile-alt DiscoverIcon"></i>Choisissez un restaurant</li>
+                    <li class="DiscoverListStep"><i class="fas fa-list-ul DiscoverIcon"></i>Composez votre menu</li>
+                    <li class="DiscoverListStep"><i class="fas fa-store DiscoverIcon"></i>Dégustez au restaurant</li>
+                </ol>
+        </section>
+
+        <section class="RestaurantsContainer">
+            <h2 class="RestaurantsTitle">Restaurants</h2>
+
+            <a class="FoodCards" href="menu-la-palette-du-goût.html">
+                <span class="New">Nouveau</span>
+                <img class="FoodCardsPictures" src="img/jay-wennington.jpg">
+                <div class="FoodCardsInfo">
+                    <h3 class="DinnerName">La palette du goût</h3>
+                    <p class="City">Ménilmontant</p>
+                </div>
+                <div class="Heart"><i class="far fa-heart heart"></i></div>
+            </a>
+
+            <a class="FoodCards" href="menu-la-note-enchantée.html">
+                <img class="FoodCardsPictures" src="img/above-plates.jpg">
+                <span class="New">Nouveau</span>
+                <div class="FoodCardsInfo">
+                    <h3 class="DinnerName">La note enchantée</h3>
+                    <p class="City">Charonne</p>
+                </div>
+                <div class="Heart"><i class="far fa-heart heart"></i></div>
+            </a>
+
+            <a class="FoodCards" href="menu-a-la-francaise.html">
+                <img class="FoodCardsPictures" src="img/toa-heftiba.jpg">
+                <div class="FoodCardsInfo">
+                    <h3 class="DinnerName">À la française</h3>
+                    <p class="City">Cité Rouge</p>
+                </div>
+                <div class="Heart"><i class="far fa-heart heart"></i></div>
+            </a>
+
+            <a class="FoodCards" href="menu-le-delice-des-sens.html">
+                <img class="FoodCardsPictures" src="img/louis-hansel.jpg">
+                <div class="FoodCardsInfo">
+                    <h3 class="DinnerName">Le délices des sens</h3>
+                    <p class="City">Folie-Méricourt</p>
+                </div>
+                <div class="Heart"><i class="far fa-heart heart"></i></div>
+            </a>
+        </section>
+    </main>
+    <!--Main-->
+
+
+    <!--Footer-->
+    <footer class="FooterContainer">
+        <h2 class="FooterTilte">ohmyfood</h2>
+        <a class="FootersLinks"><i class="fas fa-utensils Fork"></i>Proposer un restaurant</a>
+        <a class="FootersLinks"><i class="fas fa-hands-helping HandShake"></i>Devenir partenaire</a>
+        <a class="FootersLinks">Mentions légales</a>
+        <a class="FootersLinks">Contact</a>
+    </footer>
+    <!--Footer-->
+</body>
+
+</html>
