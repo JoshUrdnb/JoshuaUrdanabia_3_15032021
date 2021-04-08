@@ -62,20 +62,23 @@ a{
 /* Explore Section */
 .Explore{
     text-align: center;
-    padding: 2rem;
+    padding: 2.5rem;
     background-color: #f6f6f6;
 }
 
 .ExploreTitle{
-    font-size: 30px;
+    font-size: 25px;
+    font-weight: 500;
+    padding-bottom: 1rem;
 }
 
 .ExploreText{
     color: #414141;
+    padding-bottom: 2rem;
 }
 
 .ExploreBtn{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     width: 13.75rem;
     height: 2.80rem;
     border: 0 solid transparent;
