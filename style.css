@@ -357,6 +357,15 @@ li {counter-increment: li}
     padding-top: 2.3rem;
     font-weight: bold;
 }
+
+/*iPad Pro & Desktop*/
+@media only screen and (min-width: 1024px){
+    .menucontainer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+    }
+}
 /* Links */
 /* Main */
 /*** MENU ***/
