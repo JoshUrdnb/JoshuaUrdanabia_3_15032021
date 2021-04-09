@@ -263,7 +263,6 @@ li {counter-increment: li}
 
 /*iPad Pro & Desktop*/
 @media only screen and (min-width: 1024px){
-
     .FooterLinksContainer{
         margin: auto;
         max-width: 1280px;
