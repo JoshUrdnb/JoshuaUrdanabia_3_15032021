@@ -289,7 +289,7 @@ li {counter-increment: li}
 }
 
 .headerimg{
-    max-height: 20rem;
+    max-height: 40rem;
     width: 100%;
     object-fit: cover;
 }
