@@ -239,6 +239,10 @@ li {counter-increment: li}
 
 /* Footer */
 .FooterContainer{
+    background-color: #353535;
+}
+
+.FooterLinksContainer{
     display: flex;
     flex-direction : column;
     padding: 2rem;
@@ -259,7 +263,10 @@ li {counter-increment: li}
 
 /*iPad Pro & Desktop*/
 @media only screen and (min-width: 1024px){
-    .FooterContainer{
+
+    .FooterLinksContainer{
+        margin: auto;
+        max-width: 1280px;
         display: flex;
         flex-direction : row;
         justify-content : space-around;
