@@ -355,6 +355,7 @@ li {counter-increment: li}
 
 .price{
     padding-top: 2.3rem;
+    padding-right: 1rem;
     font-weight: bold;
 }
 
