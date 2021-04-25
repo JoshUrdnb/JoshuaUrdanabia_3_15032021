@@ -100,11 +100,7 @@ a{
     margin-bottom: 2rem;
 }
 
-.DiscoverList{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+ol {list-style: none; counter-reset: li}
 
 li::before{
     content: counter(li);
