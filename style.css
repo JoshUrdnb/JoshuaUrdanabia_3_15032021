@@ -148,10 +148,6 @@ li {counter-increment: li}
     background-color: #f6f6f6;
 }
 
-.heart{
-    font-size: 1.5rem;
-}
-
 .RestaurantsTitle{
     margin-top: 1rem;
 }
@@ -161,6 +157,11 @@ li {counter-increment: li}
     border-radius: 1.25rem;
     box-shadow: 0px 2px 30px 0px lightgray;
     align-content: stretch;
+}
+
+.FoodCards:hover{
+    transition: transform .2s;
+    transform: scale(1.1)
 }
 
 .New{
@@ -175,7 +176,7 @@ li {counter-increment: li}
     background-color: #99E2D0;
 }
 
-.Heart{
+.fa-stack{
     position: absolute;
     top: 11rem;
     right: 2rem;
@@ -366,3 +367,5 @@ li {counter-increment: li}
 /* Links */
 /* Main */
 /*** MENU ***/
+
+
