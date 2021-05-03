@@ -318,7 +318,7 @@ li {counter-increment: li}
 .appetizer{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto repeat(3, 4rem);
+    grid-template-rows: 0.3fr repeat(3, 4rem);
     gap: 1.25rem;
     padding: 1rem;
 }
