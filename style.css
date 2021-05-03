@@ -369,3 +369,38 @@ li {counter-increment: li}
 /*** MENU ***/
 
 
+/*** ANIMATION ***/
+/*** LIKE ***/
+.fa-stack{
+    position: absolute;
+    cursor: pointer;
+  }
+  
+  .fa-heart{
+    position: absolute;
+    color: #333546;
+  }
+  
+  .gradient{
+    position: relative;
+    color: transparent;
+    z-index: 1;
+  }
+  
+  .gradient::before{
+    position: absolute;
+    margin-top: -21px;
+    font-weight: bold;
+    background: linear-gradient(#9356dc, #fa79da);
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: opacity 550ms ease-out 550ms;
+    transform: scale(1.06);
+    opacity: 0;
+    z-index: -1;
+  }
+  
+  .gradient:hover::before {
+    opacity: 1;
+  }
+  /*** LIKE ***/
