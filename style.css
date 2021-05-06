@@ -532,3 +532,9 @@ li {counter-increment: li}
     }
 }
 /*** MENU DELAY ***/
+
+
+.main{
+    margin: auto;
+    max-width: 1440px;
+}
