@@ -487,3 +487,48 @@ li {counter-increment: li}
         }
       }
       /*** LOADER ***/
+
+
+/*** MENU DELAY ***/
+.delay1{
+    animation: menu_delay 0.4s ease-in-out;
+}
+.delay2{
+    animation: menu_delay 0.8s ease-in-out;
+}
+.delay3{
+    animation: menu_delay 1.2s ease-in-out;
+}
+.delay4{
+    animation: menu_delay 1.6s ease-in-out;
+}
+.delay5{
+    animation: menu_delay 2s ease-in-out;
+}
+.delay6{
+    animation: menu_delay 2.4s ease-in-out;
+}
+.delay7{
+    animation: menu_delay 2.8s ease-in-out;
+}
+.delay8{
+    animation: menu_delay 3.2s ease-in-out;
+}
+.delay9{
+    animation: menu_delay 3.4s ease-in-out;
+}
+.delay10{
+    animation: menu_delay 3.8s ease-in-out;
+}
+
+@keyframes menu_delay {
+    from {
+      opacity: 0;
+      transform: translate(0, 80%);
+    }
+    to {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+}
+/*** MENU DELAY ***/
