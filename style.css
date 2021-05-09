@@ -342,12 +342,21 @@ li {counter-increment: li}
     display: flex;
     background-color: #fff;
     border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .menulinkscontainer{
     flex-grow: 1;
     padding: 1rem;
     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+p, h4{
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .price{
