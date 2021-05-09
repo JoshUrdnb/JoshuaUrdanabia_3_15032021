@@ -533,6 +533,38 @@ li {counter-increment: li}
 }
 /*** MENU DELAY ***/
 
+/*** CHECK BOX ***/
+.check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 15px 15px 0;
+    background: #99e2d0;
+    width: 0%;
+    transition: all 0.5s linear;
+    align-self: stretch;
+    margin-right: -10px;
+}
+
+.menulinks:hover > .check{
+    transform: translateX(-10px);
+    width: 5rem;
+  }
+
+.fa-check-circle{
+    color: white;
+    font-size: 1.5em;
+}
+
+.mark{
+    transition: transform 0.5s;
+    transform: rotate(360deg);
+}
+
+.menulinks:hover > .check > .mark{
+    transform: rotate(0deg);
+}
+/*** CHECK BOX ***/
 
 .main{
     margin: auto;
