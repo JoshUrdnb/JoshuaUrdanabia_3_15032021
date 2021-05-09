@@ -181,10 +181,10 @@ li {counter-increment: li}
     background-color: #99E2D0;
 }
 
-.fa-stack{
+.fa-stack-homepage{
     position: absolute;
     top: 11rem;
-    right: 2rem;
+    right: 1rem;
 }
 
 .FoodCardsPictures{
@@ -313,10 +313,6 @@ li {counter-increment: li}
 
 .title{
     font-family: 'Shrikhand', cursive;
-}
-
-.title_heart{
-    font-size: 1.5rem;
 }
 
 /* Links */
