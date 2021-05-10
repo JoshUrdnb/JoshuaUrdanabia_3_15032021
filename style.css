@@ -382,7 +382,6 @@ p, h4{
 /*** ANIMATION ***/
 /*** LIKE ***/
 .fa-stack{
-    position: absolute;
     cursor: pointer;
   }
   
