@@ -62,20 +62,23 @@ a{
 /* Explore Section */
 .Explore{
     text-align: center;
-    padding: 2rem;
+    padding: 2.5rem;
     background-color: #f6f6f6;
 }
 
 .ExploreTitle{
-    font-size: 30px;
+    font-size: 25px;
+    font-weight: 500;
+    padding-bottom: 1rem;
 }
 
 .ExploreText{
     color: #414141;
+    padding-bottom: 2rem;
 }
 
 .ExploreBtn{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     width: 13.75rem;
     height: 2.80rem;
     border: 0 solid transparent;
@@ -84,6 +87,11 @@ a{
     font-size: 14px;
     color: white;
     background: linear-gradient(356deg, rgba(147,86,220,1) 34%, rgba(255,121,218,1) 97%);
+}
+
+.ExploreBtn:hover{
+    transition: opacity 0.2s ease-in-out 0.1s;
+    opacity: 0.8;
 }
 /* Explore Section */
 
@@ -97,45 +105,59 @@ a{
     margin-bottom: 2rem;
 }
 
-.DiscoverList{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-li::before{
-    content: counter(li);
-    display: inline-block; 
-    margin-left: -3rem;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    color: white;
-    background-color: #9356dc;
-    padding: 0.5rem 0.8rem;
-}
-
-li {counter-increment: li}
-
-.DiscoverListStep{
-    padding: 2rem;
-    margin-bottom: 1.5rem;
-    border-radius: 20px;
+.list{
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-rows: 3fr;
+    row-gap: 1rem;
+  }
+  
+  .steps{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #f6f6f6;
+    border-radius: 1.5rem;
+    height: 5rem;
     box-shadow: 0px 2px 10px 0px lightgray;
-    text-align: center;
-}
-
-.DiscoverIcon{
-    padding-right: 2rem;
-}
+    position: relative;
+  }
+  
+  .steps:hover{
+    background-color: #f5edff;
+    transition: background-color 300ms ease-in-out;
+  }
+  
+  .m-right{
+    margin-right: 2rem;
+  }
+  
+  .steps:hover > .m-right{
+    color: #9356dc;
+    transition: color 300ms ease-in-out;
+  }
+  
+  .counter{
+    position: absolute;
+    display:inline-flex;
+    align-items:center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #9356dc;
+    border-radius: 50%;
+    color:#fff;
+    left: -1rem;
+  }
 
 /*Affichage iPad et desktop*/
 @media only screen and (min-width: 768px){
-    .DiscoverList{
-        display: flex;
-        justify-content: space-around;
+    .list{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 3rem;
     }
-}
+  }
 /* Discover Section */
 
 
@@ -149,10 +171,6 @@ li {counter-increment: li}
     background-color: #f6f6f6;
 }
 
-.heart{
-    font-size: 1.5rem;
-}
-
 .RestaurantsTitle{
     margin-top: 1rem;
 }
@@ -162,6 +180,11 @@ li {counter-increment: li}
     border-radius: 1.25rem;
     box-shadow: 0px 2px 30px 0px lightgray;
     align-content: stretch;
+}
+
+.FoodCards:hover{
+    transition: transform .2s;
+    transform: scale(1.1)
 }
 
 .New{
@@ -176,10 +199,10 @@ li {counter-increment: li}
     background-color: #99E2D0;
 }
 
-.Heart{
+.fa-stack-homepage{
     position: absolute;
     top: 11rem;
-    right: 2rem;
+    right: 1rem;
 }
 
 .FoodCardsPictures{
@@ -236,6 +259,10 @@ li {counter-increment: li}
 
 /* Footer */
 .FooterContainer{
+    background-color: #353535;
+}
+
+.FooterLinksContainer{
     display: flex;
     flex-direction : column;
     padding: 2rem;
@@ -256,7 +283,9 @@ li {counter-increment: li}
 
 /*iPad Pro & Desktop*/
 @media only screen and (min-width: 1024px){
-    .FooterContainer{
+    .FooterLinksContainer{
+        margin: auto;
+        max-width: 1280px;
         display: flex;
         flex-direction : row;
         justify-content : space-around;
@@ -280,7 +309,7 @@ li {counter-increment: li}
 }
 
 .headerimg{
-    max-height: 20rem;
+    max-height: 40rem;
     width: 100%;
     object-fit: cover;
 }
@@ -304,15 +333,11 @@ li {counter-increment: li}
     font-family: 'Shrikhand', cursive;
 }
 
-.title_heart{
-    font-size: 1.5rem;
-}
-
 /* Links */
 .appetizer{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto repeat(3, 4rem);
+    grid-template-rows: 0.3fr repeat(3, 4rem);
     gap: 1.25rem;
     padding: 1rem;
 }
@@ -336,18 +361,239 @@ li {counter-increment: li}
     display: flex;
     background-color: #fff;
     border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .menulinkscontainer{
     flex-grow: 1;
     padding: 1rem;
     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+p, h4{
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .price{
     padding-top: 2.3rem;
+    padding-right: 1rem;
     font-weight: bold;
+}
+
+/*iPad Pro & Desktop*/
+@media only screen and (min-width: 1024px){
+    .menucontainer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+    }
 }
 /* Links */
 /* Main */
 /*** MENU ***/
+
+
+/*** ANIMATION ***/
+/*** LIKE ***/
+.fa-stack{
+    cursor: pointer;
+  }
+  
+  .fa-heart{
+    position: absolute;
+    color: #333546;
+  }
+  
+  .gradient{
+    position: relative;
+    color: transparent;
+    z-index: 1;
+  }
+  
+  .gradient::before{
+    position: absolute;
+    margin-top: -21px;
+    font-weight: bold;
+    background: linear-gradient(#9356dc, #fa79da);
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: opacity 550ms ease-out 550ms;
+    transform: scale(1.06);
+    opacity: 0;
+    z-index: -1;
+  }
+  
+  .gradient:hover::before {
+    opacity: 1;
+  }
+  /*** LIKE ***/
+
+    /*** LOADER ***/
+    .loader{
+        position : fixed;
+        top : 0px;
+        left : 0px;
+        height : 100%;
+        width : 100%;
+        left: 0%;
+        opacity: 1;
+        animation: slide 5s 1 ease-in-out forwards;
+        z-index: 9999;
+        cursor : wait;
+      }
+      
+      @keyframes slide {
+        0% {
+         left: 0%;
+         opacity: 1;
+        }
+        99% {
+          left: 0%;
+          opacity: 1;
+        }
+        100% {
+          left: 100%;
+          opacity: 0;
+    
+        }
+      }
+      
+      .background{
+        animation: fade 2.5s ease-in-out 2.5s;
+      }
+      
+      @keyframes fade{
+        0%{
+          opacity:1;
+        }
+      
+        100%{
+          opacity:0;
+        }
+      }
+      
+      .background{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #1e272e;
+      }
+      
+      .loading span{
+        width: 25px;
+        height: 25px;
+        margin: 0 5px;
+        background-color: #9356DC;
+        border-radius: 50%;
+        display: inline-block;
+        animation-name: dots;
+        animation-duration: 1.5s;
+        animation-iteration-count: 2;
+        animation-timing-function: ease-in-out;
+      }
+      
+      .loading span:nth-child(2){
+        background-color: #FF79DA;
+        animation-delay: 0.4s;
+      }
+      
+      .loading span:nth-child(3){
+        background-color: #99E2D0;
+        animation-delay: 0.8s;
+      }
+      
+      @keyframes dots{
+        50%{
+          opacity: 0;
+          transform: scale(0.7) translateY(10px);
+        }
+      }
+      /*** LOADER ***/
+
+
+/*** MENU DELAY ***/
+.delay1{
+    animation: menu_delay 0.4s ease-in-out;
+}
+.delay2{
+    animation: menu_delay 0.8s ease-in-out;
+}
+.delay3{
+    animation: menu_delay 1.2s ease-in-out;
+}
+.delay4{
+    animation: menu_delay 1.6s ease-in-out;
+}
+.delay5{
+    animation: menu_delay 2s ease-in-out;
+}
+.delay6{
+    animation: menu_delay 2.4s ease-in-out;
+}
+.delay7{
+    animation: menu_delay 2.8s ease-in-out;
+}
+.delay8{
+    animation: menu_delay 3.2s ease-in-out;
+}
+.delay9{
+    animation: menu_delay 3.4s ease-in-out;
+}
+.delay10{
+    animation: menu_delay 3.8s ease-in-out;
+}
+
+@keyframes menu_delay {
+    from {
+      opacity: 0;
+      transform: translate(0, 80%);
+    }
+    to {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+}
+/*** MENU DELAY ***/
+
+/*** CHECK BOX ***/
+.check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 15px 15px 0;
+    background: #99e2d0;
+    width: 0%;
+    transition: all 0.5s linear;
+    align-self: stretch;
+    margin-right: -10px;
+}
+
+.menulinks:hover > .check{
+    transform: translateX(-10px);
+    width: 5rem;
+  }
+
+.fa-check-circle{
+    color: white;
+    font-size: 1.5em;
+}
+
+.mark{
+    transition: transform 0.5s;
+    transform: rotate(360deg);
+}
+
+.menulinks:hover > .check > .mark{
+    transform: rotate(0deg);
+}
+/*** CHECK BOX ***/
+
+.main{
+    margin: auto;
+    max-width: 1440px;
+}
