@@ -337,7 +337,7 @@ a{
 }
 
 /* Links */
-.appetizer{
+.items{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.3fr repeat(3, 4rem);
@@ -351,7 +351,7 @@ a{
     color: #5c5c5c;
 }
 
-.appetizer p{
+.items p{
     font-size: 0.9em;
     padding-top: 0.2rem;
 }
