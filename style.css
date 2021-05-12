@@ -295,6 +295,16 @@ a{
         justify-content : space-around;
     }
 }
+
+@media only screen and (min-width: 1024px){
+    #HeaderContainer{
+        padding: 3.5rem;
+    }
+
+    .FooterContainer{
+        padding: 5rem;
+    }
+}
 /* Footer */
 /*** HOMEPAGE ***/
 
