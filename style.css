@@ -17,7 +17,7 @@ a{
 
 /*** HOMEPAGE ***/
 /* Header */
-#HeaderContainer{
+.HeaderContainer{
     position: relative;
     padding: 1rem;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
@@ -297,11 +297,11 @@ a{
 }
 
 @media only screen and (min-width: 1024px){
-    #HeaderContainer{
+    .HC2{
         padding: 3.5rem;
     }
 
-    .FooterContainer{
+    .FC2{
         padding: 5rem;
     }
 }
