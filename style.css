@@ -378,9 +378,14 @@ a{
     white-space: nowrap;
 }
 
-p, h4{
+p{
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.dish_title{
+    font-size: medium;
+    font-weight: bold;
 }
 
 .price{
