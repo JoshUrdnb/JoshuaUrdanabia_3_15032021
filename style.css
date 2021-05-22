@@ -617,3 +617,7 @@ p{
     transform: rotate(0deg);
 }
 /*** CHECK BOX ***/
+
+.section_hidden{
+    display: none;
+}
