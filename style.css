@@ -409,6 +409,10 @@ p{
     font-weight: bold;
 }
 
+.Explore_h2{
+    display: none;
+}
+
 /*iPad Pro & Desktop*/
 @media only screen and (min-width: 1024px){
     .menucontainer{
@@ -617,7 +621,3 @@ p{
     transform: rotate(0deg);
 }
 /*** CHECK BOX ***/
-
-.section_hidden{
-    display: none;
-}
